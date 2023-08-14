@@ -803,6 +803,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
@@ -820,7 +821,10 @@ img {
   margin-bottom: 24px;
 }
 
-.backdrop .checkbox-conteiner-input {
+.backdrop .checkbox-conteiner-input:checked {
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--cloud);
 }
 
 .backdrop .checkbox-conteiner-label {
@@ -842,9 +846,6 @@ img {
   fill: transparent;
 }
 
-.backdrop .checkbox-conteiner-label-span .icon {
-}
-
 .backdrop .button {
   display: block;
   min-width: 169px;
@@ -853,4 +854,9 @@ img {
   cursor: pointer;
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
+}
+
+.backdrop .checkbox-conteiner-label-link {
+  color: var(--iris);
 }
