@@ -625,26 +625,34 @@
               </svg>
             </div>
           </div>
-          <div class="field-box">
+          <div class="textarea-box">
             <label class="field-box-label" for="user-comment">Comment </label>
             <textarea
-              class="field-box-input-group-textarea"
+              class="textarea-style"
               name="user-comment"
               id="user-comment"
-              cols="30"
-              rows="10"
               placeholder="Text input"
             ></textarea>
           </div>
-          <div>
-            <input type="checkbox" name="accept" id="accept" />
-            <label>
+          <div class="checkbox-conteiner">
+            <input
+              class="checkbox-conteiner-input visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label for="user-privacy">
               I accept the terms and conditions of the
-              <a href="3"> Privacy Policy</a>
+              <span>
+                <svg class="icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
             </label>
           </div>
 
-          <button>Send</button>
+          <button class="button">Send</button>
         </form>
       </div>
     </div>
