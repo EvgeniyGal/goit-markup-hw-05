@@ -181,39 +181,49 @@ body {
   fill: var(--cloud);
 }
 
-.page-footer .subscribe-section {
+.page-footer .subscribe-box {
   display: flex;
   flex-direction: column;
 }
 
-.page-footer .subscribe-section-form {
+.subscribe-section-form {
   display: flex;
   gap: 24px;
 }
 
-.page-footer .subscribe-section-form input {
-  min-width: 264px;
-  min-height: 40px;
-  border-radius: 4px;
-  border: 1px solid var(--white, #fff);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: var(--white, #fff);
-  font-size: 12px;
-  font-weight: 400;
-  padding: 8px 16px;
+.subscribe-section-form-label {
 }
 
-.page-footer .subscribe-section-form .button {
+.subscribe-section-form-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid var(--white, #fff);
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white, #fff);
+}
+
+.subscribe-section-form .button {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--white);
   background-color: var(--iris);
-  border: 1px solid var(--cornflower);
+  border: none;
   padding: 8px 24px;
   border-radius: 4px;
 }
 
 .page-footer .subscribe-section-form .button .icon {
   fill: var(--white);
-  margin-left: auto;
+  margin-left: 16px;
 }
 
 .page-footer .subscribe-section-form .button:hover,
@@ -667,6 +677,7 @@ img {
 }
 
 .backdrop {
+  padding: 72px 24px 24px 24px;
   background: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   position: fixed;
   width: 100%;
@@ -677,6 +688,16 @@ img {
   font-size: 0px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop .paragraph {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--navyblue);
+  margin-bottom: 16px;
 }
 
 .backdrop .blank {
