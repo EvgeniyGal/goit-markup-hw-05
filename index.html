@@ -498,7 +498,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="social-section">
           <p class="paragraph">Social media</p>
           <ul class="list">
             <li class="icon-size">
@@ -551,6 +551,18 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-section">
+          <p class="paragraph">Subscribe</p>
+          <form class="subscribe-section-form" action="sumit">
+            <input type="text" placeholder="E-mail" />
+            <button class="button">
+              Subscribe
+              <svg class="icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe-btn"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- Back drop -->
@@ -561,6 +573,39 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <h2 class="second-heading">
+          Leave your contacts and we will call you back
+        </h2>
+        <form action="sunmit">
+          <label>
+            Name
+            <input name="name" type="text" />
+          </label>
+          <label>
+            Phone
+            <input name="tel" type="tel" />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" />
+          </label>
+          <label>
+            <textarea
+              name="comment"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+
+          <input type="checkbox" name="accept" id="accept" />
+          <p>
+            I accept the terms and conditions of the
+            <a href="3"> Privacy Policy</a>
+          </p>
+          <button>Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
