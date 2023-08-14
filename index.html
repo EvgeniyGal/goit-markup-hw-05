@@ -612,7 +612,7 @@
             </div>
           </div>
           <div class="field-box">
-            <label class="field-box-label" for="phone"> E-mail </label>
+            <label class="field-box-label" for="phone"> Email </label>
             <div class="field-box-input-group">
               <input
                 id="email"
@@ -626,22 +626,24 @@
             </div>
           </div>
           <div class="field-box">
-            <label class="field-box-label" for="phone">Comment </label>
-            <div class="field-box-input-group">
-              <textarea
-                name="user-comment"
-                id="user-comment"
-                cols="30"
-                rows="10"
-                placeholder="Text input"
-              ></textarea>
-            </div>
+            <label class="field-box-label" for="user-comment">Comment </label>
+            <textarea
+              class="field-box-input-group-textarea"
+              name="user-comment"
+              id="user-comment"
+              cols="30"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
           </div>
-          <input type="checkbox" name="accept" id="accept" />
-          <p>
-            I accept the terms and conditions of the
-            <a href="3"> Privacy Policy</a>
-          </p>
+          <div>
+            <input type="checkbox" name="accept" id="accept" />
+            <label>
+              I accept the terms and conditions of the
+              <a href="3"> Privacy Policy</a>
+            </label>
+          </div>
+
           <button>Send</button>
         </form>
       </div>
