@@ -820,7 +820,10 @@ img {
   margin-bottom: 24px;
 }
 
-.backdrop .checkbox-conteiner-input:checked + .checkbox-conteiner-label-span {
+.backdrop
+  .checkbox-conteiner-input:checked
+  + .backdrop
+  .checkbox-conteiner-label-span {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
