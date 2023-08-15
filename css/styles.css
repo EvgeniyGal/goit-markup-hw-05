@@ -822,7 +822,7 @@ img {
 
 .backdrop
   .checkbox-conteiner-input:checked
-  + .backdrop
+  + .checkbox-conteiner-label
   .checkbox-conteiner-label-span {
   background-color: var(--ocean);
   border: none;
