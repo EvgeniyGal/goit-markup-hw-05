@@ -9,6 +9,9 @@
   --slate: #434455;
   --lite-slate: #8e8f99;
   --footer-icon-fiil: #31d0aa;
+  --trans-bg: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --trans-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --trans-br-color: var(--trans-br-color);
 }
 
 body {
@@ -52,7 +55,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--trans-color);
 }
 
 .address-section .link:hover,
@@ -169,7 +172,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--trans-bg);
 }
 
 .page-footer .list .icon-box:hover,
@@ -262,7 +265,7 @@ body {
   border-radius: 4px;
   margin: 0 auto;
   padding: 0;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--trans-bg);
 }
 
 .main-section .button:hover,
@@ -392,7 +395,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--navyblue);
   padding: 24px 0;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--trans-color);
 }
 
 .nav-section .list .item .current {
@@ -522,7 +525,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--trans-bg);
 }
 
 .team-section .social-list .icon-box:hover,
@@ -562,8 +565,7 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--lite-slate);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--trans-br-color), var(--trans-color);
 }
 
 .customers-icon-box:hover,
@@ -594,9 +596,7 @@ img {
   background: var(--cloud);
   color: var(--iris);
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: var(--trans-color), var(--trans-bg), var(--trans-br-color),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -725,8 +725,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--trans-bg), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop .close-button:hover,
@@ -777,7 +776,7 @@ img {
   background-color: transparent;
   padding-left: 38px;
   outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--trans-br-color);
 }
 
 .backdrop .field-box-input-group-text:focus {
@@ -810,7 +809,7 @@ img {
   padding: 8px 16px;
   outline: transparent;
   resize: none;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--trans-br-color);
 }
 
 .backdrop .textarea-style:focus {
@@ -821,7 +820,7 @@ img {
   margin-bottom: 24px;
 }
 
-.backdrop .checkbox-conteiner-input:checked {
+.backdrop .checkbox-conteiner-input:checked + .checkbox-conteiner-label-span {
   background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
@@ -839,13 +838,12 @@ img {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--trans-br-color);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: var(--trans-bg), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -856,8 +854,9 @@ img {
   color: var(--white);
   cursor: pointer;
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 auto;
+  border: none;
+  transition: var(--trans-bg);
 }
 
 .backdrop .checkbox-conteiner-label-link {
