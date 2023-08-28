@@ -783,13 +783,17 @@ img {
   border-color: var(--iris);
 }
 
+.backdrop .field-box-input-group-text:focus + .icon {
+  fill: var(--iris);
+}
+
 .backdrop .field-box-input-group .icon {
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--iris);
+  fill: var(--navyblue);
 }
 
 .backdrop .textarea-box {
@@ -824,9 +828,7 @@ img {
   .checkbox-conteiner-input:checked
   + .checkbox-conteiner-label
   .checkbox-conteiner-label-span {
-  background-color: var(--ocean);
-  border: none;
-  fill: var(--cloud);
+  fill: var(--ocean);
 }
 
 .backdrop .checkbox-conteiner-label {
