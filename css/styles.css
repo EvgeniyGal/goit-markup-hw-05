@@ -206,6 +206,7 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: var(--white, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .subscribe-section-form .button {
@@ -828,7 +829,9 @@ img {
   .checkbox-conteiner-input:checked
   + .checkbox-conteiner-label
   .checkbox-conteiner-label-span {
-  fill: var(--ocean);
+  background-color: var(--ocean);
+  border: none;
+  fill: var(--cloud);
 }
 
 .backdrop .checkbox-conteiner-label {
@@ -836,6 +839,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--lite-slate);
+  display: block;
 }
 
 .backdrop .checkbox-conteiner-label-span {
